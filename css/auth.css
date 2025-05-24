@@ -1,0 +1,136 @@
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
+
+.auth-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+}
+
+.auth-form h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0070c9;
+  box-shadow: 0 0 0 3px rgba(0, 112, 201, 0.2);
+}
+
+.form-group input::placeholder {
+  color: #666666;
+}
+
+.form-group input[type="tel"],
+.form-group input[type="text"] {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.form-group input[type="tel"]:focus,
+.form-group input[type="text"]:focus {
+  border-color: #0070c9;
+  background-color: #ffffff;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.auth-link a {
+  color: #0070c9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* Анимации для шагов */
+.step {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.step.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.step.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Стили для кнопок в форме */
+.auth-form .btn {
+  margin-top: 8px;
+}
+
+/* Стили для иконок в кнопках */
+.btn .material-icons {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 20px;
+  }
+}
+
+/* Принудительные стили для полей ввода */
+input[type="tel"],
+input[type="text"] {
+  background-color: #ffffff !important;
+  border: 2px solid #000000 !important;
+  color: #000000 !important;
+  padding: 12px 16px !important;
+  width: 100% !important;
+  display: block !important;
+  margin-bottom: 10px !important;
+  font-size: 16px !important;
+  border-radius: 8px !important;
+}
